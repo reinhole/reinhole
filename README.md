@@ -1,5 +1,10 @@
 # 💫 About Me:
-I'm a data science student at the university of stuttgart, currently studying for my bachelors degree.<br><br>I love to code and work on different projects in my free time.<br>I'm currently working on different web scraping applications, and would love to connect with other enthusiasts in that space.
+Welcome to my GitHub page!
+#### 🎓 Artificial Intelligence and Data Science B.Sc. Student
+#### 📌 Baden-Württemberg, Germany
+
+<br>I love to code and work on different projects in my free time.
+<br>I'm currently working on different web scraping applications, and would love to connect with other enthusiasts in that space.
 
 
 ## 🌐 Socials:
