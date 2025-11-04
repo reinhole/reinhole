@@ -14,13 +14,13 @@ Welcome to my GitHub page!
 
 ---
 
-### Languages
+### Languages:
 [![My Languages](https://skillicons.dev/icons?i=c,py,java,js,r,sqlite,html,latex)](https://skillicons.dev)
 
-### Development Environments
+### Development Environments:
 [![My Skills](https://skillicons.dev/icons?i=idea,pycharm,vscode,visualstudio,eclipse,anaconda,arduino,raspberrypi,blender,unreal,unity)](https://skillicons.dev)
 
-# 💻 Tech Stack:
+### Tech Stack:
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) 
 ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) 
 ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) 
