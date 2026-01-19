@@ -18,7 +18,7 @@ Welcome to my GitHub page!
 [![My Languages](https://skillicons.dev/icons?i=c,py,java,js,r,sqlite,html,latex)](https://skillicons.dev)
 
 ### Development Environments:
-[![My Skills](https://skillicons.dev/icons?i=idea,pycharm,vscode,visualstudio,eclipse,anaconda,arduino,raspberrypi,blender,unreal,unity)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=idea,pycharm,vscode,visualstudio,eclipse,anaconda,arduino,raspberrypi,blender,unreal,godot,unity)](https://skillicons.dev)
 
 ### Tech Stack:
 ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) 
