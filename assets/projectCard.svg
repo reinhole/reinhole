@@ -1,0 +1,29 @@
+<svg width="680" height="130" viewBox="0 0 680 130" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="678" height="128" rx="9" fill="none" stroke="#cccccc" stroke-width="1"/>
+  <rect x="1" y="1" width="4" height="128" rx="2" fill="#185FA5"/>
+  <text x="24" y="24" font-family="monospace" font-size="9" font-weight="700" fill="#185FA5" letter-spacing="2">FEATURED PROJECT</text>
+  <text x="24" y="52" font-family="monospace" font-size="20" font-weight="700" fill="#1a1a1a">klartext-tools.com</text>
+  <text x="24" y="74" font-family="monospace" font-size="11" fill="#555555">A free, browser-based toolkit — 60+ tools across developer, gaming, math, finance and more.</text>
+  <text x="24" y="90" font-family="monospace" font-size="11" fill="#555555">Built with Eleventy (11ty) · Multilingual · No sign-up required · Runs fully in your browser</text>
+  <rect x="24" y="105" width="52" height="16" rx="3" fill="#185FA5" fill-opacity="0.12"/>
+  <text x="50" y="116" text-anchor="middle" font-family="monospace" font-size="9" fill="#185FA5">11ty / SSG</text>
+  <rect x="82" y="105" width="60" height="16" rx="3" fill="#534AB7" fill-opacity="0.12"/>
+  <text x="112" y="116" text-anchor="middle" font-family="monospace" font-size="9" fill="#534AB7">JavaScript</text>
+  <rect x="148" y="105" width="50" height="16" rx="3" fill="#0F6E56" fill-opacity="0.12"/>
+  <text x="173" y="116" text-anchor="middle" font-family="monospace" font-size="9" fill="#0F6E56">60+ tools</text>
+  <rect x="204" y="105" width="64" height="16" rx="3" fill="#854F0B" fill-opacity="0.12"/>
+  <text x="236" y="116" text-anchor="middle" font-family="monospace" font-size="9" fill="#854F0B">Multilingual</text>
+  <text x="650" y="116" text-anchor="end" font-family="monospace" font-size="10" fill="#185FA5">klartext-tools.com →</text>
+  <rect x="490" y="20" width="56" height="22" rx="4" fill="none" stroke="#185FA5" stroke-width="0.5" stroke-opacity="0.5"/>
+  <text x="518" y="34" text-anchor="middle" font-family="monospace" font-size="9" fill="#185FA5" fill-opacity="0.7">Developer</text>
+  <rect x="552" y="20" width="48" height="22" rx="4" fill="none" stroke="#534AB7" stroke-width="0.5" stroke-opacity="0.5"/>
+  <text x="576" y="34" text-anchor="middle" font-family="monospace" font-size="9" fill="#534AB7" fill-opacity="0.7">Gaming</text>
+  <rect x="606" y="20" width="52" height="22" rx="4" fill="none" stroke="#0F6E56" stroke-width="0.5" stroke-opacity="0.5"/>
+  <text x="632" y="34" text-anchor="middle" font-family="monospace" font-size="9" fill="#0F6E56" fill-opacity="0.7">Math</text>
+  <rect x="490" y="50" width="56" height="22" rx="4" fill="none" stroke="#854F0B" stroke-width="0.5" stroke-opacity="0.5"/>
+  <text x="518" y="64" text-anchor="middle" font-family="monospace" font-size="9" fill="#854F0B" fill-opacity="0.7">Finance</text>
+  <rect x="552" y="50" width="48" height="22" rx="4" fill="none" stroke="#993C1D" stroke-width="0.5" stroke-opacity="0.5"/>
+  <text x="576" y="64" text-anchor="middle" font-family="monospace" font-size="9" fill="#993C1D" fill-opacity="0.7">Web</text>
+  <rect x="606" y="50" width="52" height="22" rx="4" fill="none" stroke="#3B6D11" stroke-width="0.5" stroke-opacity="0.5"/>
+  <text x="632" y="64" text-anchor="middle" font-family="monospace" font-size="9" fill="#3B6D11" fill-opacity="0.7">+more</text>
+</svg>
