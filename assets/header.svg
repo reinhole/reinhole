@@ -1,0 +1,20 @@
+<svg width="680" height="56" viewBox="0 0 680 56" xmlns="http://www.w3.org/2000/svg">
+  <line x1="40" y1="28" x2="640" y2="28" stroke="#cccccc" stroke-width="0.5"/>
+  <rect x="176" y="16" width="20" height="24" rx="3" fill="#185FA5" fill-opacity="0.12"/>
+  <text x="186" y="30" text-anchor="middle" font-family="monospace" font-size="10" fill="#185FA5">py</text>
+  <rect x="202" y="16" width="20" height="24" rx="3" fill="#534AB7" fill-opacity="0.12"/>
+  <text x="212" y="30" text-anchor="middle" font-family="monospace" font-size="10" fill="#534AB7">js</text>
+  <rect x="228" y="16" width="24" height="24" rx="3" fill="#0F6E56" fill-opacity="0.12"/>
+  <text x="240" y="30" text-anchor="middle" font-family="monospace" font-size="9" fill="#0F6E56">sql</text>
+  <rect x="258" y="16" width="24" height="24" rx="3" fill="#854F0B" fill-opacity="0.12"/>
+  <text x="270" y="30" text-anchor="middle" font-family="monospace" font-size="9" fill="#854F0B">ml</text>
+  <rect x="288" y="16" width="20" height="24" rx="3" fill="#993C1D" fill-opacity="0.12"/>
+  <text x="298" y="30" text-anchor="middle" font-family="monospace" font-size="9" fill="#993C1D">cv</text>
+  <rect x="314" y="16" width="20" height="24" rx="3" fill="#3B6D11" fill-opacity="0.12"/>
+  <text x="324" y="30" text-anchor="middle" font-family="monospace" font-size="9" fill="#3B6D11">ai</text>
+  <text x="348" y="30" text-anchor="middle" font-family="monospace" font-size="10" fill="#aaaaaa">//</text>
+  <rect x="362" y="16" width="88" height="24" rx="3" fill="#185FA5" fill-opacity="0.10"/>
+  <text x="406" y="30" text-anchor="middle" font-family="monospace" font-size="9" fill="#185FA5">Baden-Württemberg</text>
+  <rect x="456" y="16" width="100" height="24" rx="3" fill="#534AB7" fill-opacity="0.10"/>
+  <text x="506" y="30" text-anchor="middle" font-family="monospace" font-size="9" fill="#534AB7">B.Sc. AI &amp; Data Sci.</text>
+</svg>
