@@ -1,7 +1,7 @@
 <div align="center">
 
-<!-- HERO TYPING BANNER -->
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&duration=0&pause=0&color=2563EB&center=true&vCenter=true&repeat=false&width=680&height=70&lines=OLE+REINHOLD)
+<!-- HERO BANNER -->
+![header](https://capsule-render.vercel.app/api?type=rect&color=0:0f1117,100:1a2332&height=80&section=header&text=OLE%20REINHOLD&fontSize=40&fontColor=ffffff&fontAlignY=65&desc=AI%20%C2%B7%20Data%20Science%20%C2%B7%20Hobbyist%20Developer&descSize=14&descAlignY=85&descColor=aaaaaa)
 
 <sup><b>AI & DATA SCIENCE · STUDENT · HOBBYIST DEVELOPER</b></sup>
 
@@ -17,17 +17,6 @@
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sangria82artsier@icloud.com)
 [![Website](https://img.shields.io/badge/klartext--tools.com-185FA5?style=flat-square&logo=googlechrome&logoColor=white)](https://klartext-tools.com/en/)
 
-<br>
-
-<!-- LANGUAGE PILL STRIP via shields -->
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=sqlite&logoColor=white)
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=flat-square&logo=html5&logoColor=white)
-![LaTeX](https://img.shields.io/badge/LaTeX-008080?style=flat-square&logo=latex&logoColor=white)
 
 </div>
 
