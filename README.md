@@ -1,9 +1,11 @@
-![banner](https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:162032,100:1d3a5c&height=140&section=header&text=Ole%20Reinhold&fontSize=42&fontColor=ffffff&fontAlignY=52&desc=AI%20%26%20Data%20Science%20%C2%B7%20Baden-W%C3%BCrttemberg%2C%20Germany&descSize=13&descColor=7a9cbf&descAlignY=75)
-
 <div align="center">
 
+# Ole Reinhold
+
+**B.Sc. Artificial Intelligence & Data Science · Baden-Württemberg, Germany**
+
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=flat-square&logo=Instagram&logoColor=white)](https://instagram.com/ole__7.2.1.8.20.9.12.14)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ole-reinhold-91a55b289)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/olereinhold)
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sangria82artsier@icloud.com)
 [![klartext-tools.com](https://img.shields.io/badge/klartext--tools.com-1d6fa5?style=flat-square&logo=googlechrome&logoColor=white)](https://klartext-tools.com/en/)
 
@@ -11,7 +13,7 @@
 
 ---
 
-B.Sc. student in **Artificial Intelligence & Data Science**, based in Baden-Württemberg. I build things in my spare time — data pipelines, scrapers, games, simulations. Currently expanding [klartext-tools.com](https://klartext-tools.com/en/) and working on web scraping projects. Always happy to connect with other builders.
+I build things in my spare time — data pipelines, scrapers, games, simulations. Currently expanding **[klartext-tools.com](https://klartext-tools.com/en/)** and working on web scraping projects. Always happy to connect with other builders.
 
 ---
 
@@ -21,14 +23,16 @@ B.Sc. student in **Artificial Intelligence & Data Science**, based in Baden-Wür
 
 | Category | Sample tools |
 |:---|:---|
-| Developer | JSON formatter · Regex suite · JWT decoder · Cron builder · Base64 & Hashing |
-| Gaming | FPS calculator · CS2, VALORANT & Fortnite sensitivity converters · Aim visualizer |
-| Math & Science | Function plotter · Statistics calculator · Unit converter · Equation solver |
-| Web Utilities | SEO meta generator · Sitemap validator · Open Graph preview · UTM builder |
-| Handyman | Paint · Tile · Flooring · Concrete calculators |
-| Diagnostics | Keyboard tester · Typing speed · Reaction time test |
+| 🛠 Developer | JSON formatter · Regex suite · JWT decoder · Cron builder · Base64 & Hashing |
+| 🎮 Gaming | FPS calculator · CS2, VALORANT & Fortnite sensitivity converters · Aim visualizer |
+| 📐 Math & Science | Function plotter · Statistics calculator · Unit converter · Equation solver |
+| 🌐 Web Utilities | SEO meta generator · Sitemap validator · Open Graph preview · UTM builder |
+| 🏠 Handyman | Paint · Tile · Flooring · Concrete calculators |
+| 🖥️ Diagnostics | Keyboard tester · Typing speed · Reaction time test |
 
-`Eleventy (11ty)` `Nunjucks` `Vanilla JS` `EN/DE` `CDN-deployed`
+`Eleventy (11ty)` · `Nunjucks` · `Vanilla JS` · `EN/DE` · `CDN-deployed`
+
+[![→ klartext-tools.com](https://img.shields.io/badge/→%20Visit%20klartext--tools.com-1d6fa5?style=for-the-badge&logo=googlechrome&logoColor=white)](https://klartext-tools.com/en/)
 
 ---
 
@@ -36,7 +40,7 @@ B.Sc. student in **Artificial Intelligence & Data Science**, based in Baden-Wür
 
 <div align="center">
 
-[![Languages](https://skillicons.dev/icons?i=c,py,java,js,r,sqlite,html,latex)](https://skillicons.dev)
+[![Languages](https://skillicons.dev/icons?i=c,py,java,js,r,sqlite,html,latex&perrow=8)](https://skillicons.dev)
 
 </div>
 
@@ -46,7 +50,7 @@ B.Sc. student in **Artificial Intelligence & Data Science**, based in Baden-Wür
 
 <div align="center">
 
-[![Environments](https://skillicons.dev/icons?i=idea,pycharm,vscode,visualstudio,eclipse,anaconda,arduino,raspberrypi,blender,unreal,godot,unity)](https://skillicons.dev)
+[![Environments](https://skillicons.dev/icons?i=idea,pycharm,vscode,visualstudio,eclipse,anaconda,arduino,raspberrypi,blender,unreal,godot,unity&perrow=12)](https://skillicons.dev)
 
 </div>
 
@@ -56,33 +60,26 @@ B.Sc. student in **Artificial Intelligence & Data Science**, based in Baden-Wür
 
 <div align="center">
 
-![NumPy](https://img.shields.io/badge/NumPy-%23013243.svg?style=flat-square&logo=numpy&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-%23150458.svg?style=flat-square&logo=pandas&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=flat-square&logo=PyTorch&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=flat-square&logo=scikit-learn&logoColor=white)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=flat-square&logo=Matplotlib&logoColor=black)
-![Eleventy](https://img.shields.io/badge/Eleventy-000000?style=flat-square&logo=eleventy&logoColor=white)
+[![Stack](https://skillicons.dev/icons?i=pytorch&perrow=8)](https://skillicons.dev)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat-square&logo=python&logoColor=white)
 
 </div>
 
 ---
 
-### Stats
+### Current Focus
 
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=reinhole&show_icons=true&theme=github_dark&hide_border=true&title_color=4d94ff&icon_color=4d94ff&include_all_commits=true&count_private=true)
-&nbsp;
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=reinhole&layout=compact&theme=github_dark&hide_border=true&title_color=4d94ff)
-
-</div>
+```
+▸ klartext-tools.com  —  building and expanding the tool library
+▸ Web scraping & data collection pipelines
+▸ Machine learning & applied AI  (coursework + personal projects)
+▸ Game development  (hobby — Unreal, Godot, Unity)
+```
 
 ---
 
 <div align="center">
-
-![banner](https://capsule-render.vercel.app/api?type=waving&color=0:1d3a5c,100:0d1117&height=80&section=footer)
-
 <sub>Open to collaboration · English & German · <a href="https://klartext-tools.com/en/">klartext-tools.com</a></sub>
-
 </div>
