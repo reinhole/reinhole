@@ -1,0 +1,73 @@
+<svg width="960" height="180" viewBox="0 0 960 180" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Ole Reinhold hero banner</title>
+  <desc id="desc">Minimal developer banner with role chips and subtle grid background.</desc>
+  <defs>
+    <linearGradient id="accent" x1="140" y1="0" x2="820" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#185FA5"/>
+      <stop offset="1" stop-color="#5B7CFA"/>
+    </linearGradient>
+    <linearGradient id="accentSoft" x1="0" y1="0" x2="960" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#185FA5" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#5B7CFA" stop-opacity="0.08"/>
+    </linearGradient>
+    <filter id="blur" x="0" y="0" width="960" height="180" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="24"/>
+    </filter>
+    <style>
+      .bg{fill:#ffffff}.card{fill:#ffffff;stroke:#d9d9de}.muted{fill:#5f6470}.text{fill:#121417}.sub{fill:#3d4450}.chipA{fill:#edf4ff;stroke:#c9ddff}.chipB{fill:#f3efff;stroke:#ddd1ff}.chipC{fill:#eaf8f4;stroke:#c9ebdf}.chipTextA{fill:#185FA5}.chipTextB{fill:#5c46c2}.chipTextC{fill:#126a54}.line{stroke:#d8dbe2}.grid{stroke:#eef1f5}.accent{fill:url(#accent)}
+      @media (prefers-color-scheme: dark) {
+        .bg{fill:#0d1117}.card{fill:#0f141b;stroke:#2b3440}.muted{fill:#9aa4b2}.text{fill:#f3f6fb}.sub{fill:#c6ced9}.chipA{fill:#10253c;stroke:#214f82}.chipB{fill:#1d1734;stroke:#47328d}.chipC{fill:#10261f;stroke:#1d6a55}.chipTextA{fill:#7bb1ef}.chipTextB{fill:#b6a3ff}.chipTextC{fill:#7fd0b8}.line{stroke:#29313b}.grid{stroke:#18202a}
+      }
+    </style>
+  </defs>
+
+  <rect class="bg" width="960" height="180" rx="20"/>
+
+  <g opacity="0.9">
+    <path d="M0 36H960" class="grid"/>
+    <path d="M0 72H960" class="grid"/>
+    <path d="M0 108H960" class="grid"/>
+    <path d="M0 144H960" class="grid"/>
+    <path d="M96 0V180" class="grid"/>
+    <path d="M192 0V180" class="grid"/>
+    <path d="M288 0V180" class="grid"/>
+    <path d="M384 0V180" class="grid"/>
+    <path d="M480 0V180" class="grid"/>
+    <path d="M576 0V180" class="grid"/>
+    <path d="M672 0V180" class="grid"/>
+    <path d="M768 0V180" class="grid"/>
+    <path d="M864 0V180" class="grid"/>
+  </g>
+
+  <g filter="url(#blur)" opacity="0.6">
+    <circle cx="744" cy="34" r="70" fill="#185FA5" fill-opacity="0.25"/>
+    <circle cx="842" cy="126" r="92" fill="#5B7CFA" fill-opacity="0.18"/>
+  </g>
+
+  <rect x="28" y="22" width="904" height="136" rx="18" class="card"/>
+  <rect x="44" y="38" width="6" height="104" rx="3" class="accent"/>
+
+  <text x="70" y="66" class="muted" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700" letter-spacing="2.6">OLE REINHOLD</text>
+  <text x="70" y="102" class="text" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="32" font-weight="800">AI, data, and developer tools</text>
+  <text x="70" y="130" class="sub" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="500">Building practical projects across web scraping, automation, and applied machine learning.</text>
+
+  <g>
+    <rect x="70" y="142" width="112" height="24" rx="12" class="chipA"/>
+    <text x="126" y="158" text-anchor="middle" class="chipTextA" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Python</text>
+
+    <rect x="190" y="142" width="128" height="24" rx="12" class="chipB"/>
+    <text x="254" y="158" text-anchor="middle" class="chipTextB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">JavaScript</text>
+
+    <rect x="326" y="142" width="140" height="24" rx="12" class="chipC"/>
+    <text x="396" y="158" text-anchor="middle" class="chipTextC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Web scraping</text>
+  </g>
+
+  <g>
+    <path d="M636 82H882" class="line" stroke-width="1.5" stroke-linecap="round"/>
+    <circle cx="714" cy="82" r="4" class="accent"/>
+    <circle cx="792" cy="82" r="4" class="accent"/>
+    <circle cx="870" cy="82" r="4" class="accent"/>
+    <text x="636" y="64" class="muted" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="1.8">FOCUS</text>
+    <text x="636" y="112" class="sub" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="600">Student · Builder · Curious generalist</text>
+  </g>
+</svg>
