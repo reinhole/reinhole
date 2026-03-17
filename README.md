@@ -70,7 +70,7 @@ I build things in my spare time — data pipelines, scrapers, games, simulations
 
 <div align="center">
 
-![Pytorch](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)&nbsp;
+![PyTorch](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)&nbsp;
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)&nbsp;
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)&nbsp;
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)&nbsp;
