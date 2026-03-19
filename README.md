@@ -102,8 +102,23 @@ It currently includes tools across areas such as:
 ![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
 ![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-11557c?style=flat-square&logo=python&logoColor=white)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white)
+![BeautifulSoup](https://img.shields.io/badge/BeautifulSoup-3776AB?style=flat-square&logo=python&logoColor=white)
+![Eleventy](https://img.shields.io/badge/Eleventy-222222?style=flat-square&logo=eleventy&logoColor=white)
 
+</div>
+
+---
+
+## GitHub Activity
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://ghchart.rshah.org/5B7CFA/reinhole">
+    <img src="https://ghchart.rshah.org/185FA5/reinhole" alt="GitHub contribution chart" width="900">
+  </picture>
 </div>
 
 ---
@@ -113,11 +128,6 @@ It currently includes tools across areas such as:
 <div align="center">
   <img src="assets/focus-bar-improved.svg" alt="Current focus banner">
 </div>
-
-    klartext-tools.com    building and expanding the tool library
-    Web scraping          data collection and automation pipelines
-    Machine learning      applied AI, coursework, and personal projects
-    Game development      hobby projects in Unreal, Godot, and Unity
 
 ---
 
