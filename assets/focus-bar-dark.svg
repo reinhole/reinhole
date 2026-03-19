@@ -1,0 +1,25 @@
+<svg width="960" height="120" viewBox="0 0 960 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Current focus bar</title>
+  <desc id="desc">Current focus areas shown as clean chips.</desc>
+  <defs>
+    <style>
+      .bg{fill:#0d1117}.muted{fill:#9aa4b2}.pillA{fill:#10253c;stroke:#214f82}.pillB{fill:#1d1734;stroke:#47328d}.pillC{fill:#10261f;stroke:#1d6a55}.pillD{fill:#2c1d12;stroke:#7f4721}.pillTextA{fill:#7bb1ef}.pillTextB{fill:#b6a3ff}.pillTextC{fill:#7fd0b8}.pillTextD{fill:#ffb37a}
+    </style>
+  </defs>
+  <rect class="bg" width="960" height="120" rx="20"/>
+  <text x="36" y="28" class="muted" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="800" letter-spacing="2.4">CURRENT FOCUS</text>
+
+  <rect x="36" y="46" width="214" height="40" rx="20" class="pillA"/>
+  <text x="143" y="71" text-anchor="middle" class="pillTextA" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700">klartext-tools.com</text>
+
+  <rect x="266" y="46" width="188" height="40" rx="20" class="pillB"/>
+  <text x="360" y="71" text-anchor="middle" class="pillTextB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700">Machine learning</text>
+
+  <rect x="470" y="46" width="168" height="40" rx="20" class="pillC"/>
+  <text x="554" y="71" text-anchor="middle" class="pillTextC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700">Web scraping</text>
+
+  <rect x="654" y="46" width="168" height="40" rx="20" class="pillD"/>
+  <text x="738" y="71" text-anchor="middle" class="pillTextD" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="14" font-weight="700">Game dev</text>
+
+  <text x="36" y="106" class="muted" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">Practical projects, strong fundamentals, and long-term building.</text>
+</svg>
