@@ -1,0 +1,59 @@
+<svg width="960" height="260" viewBox="0 0 960 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Featured project card for Klartext Tools</title>
+  <desc id="desc">Clean project card presenting Klartext Tools and its key categories.</desc>
+  <defs>
+    <linearGradient id="accent" x1="38" y1="44" x2="912" y2="232" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#185FA5"/>
+      <stop offset="1" stop-color="#5B7CFA"/>
+    </linearGradient>
+    <style>
+      .bg{fill:#0d1117}.card{fill:#0f141b;stroke:#2b3440}.muted{fill:#9aa4b2}.text{fill:#f3f6fb}.sub{fill:#c6ced9}.pillA{fill:#10253c;stroke:#214f82}.pillB{fill:#1d1734;stroke:#47328d}.pillC{fill:#10261f;stroke:#1d6a55}.pillD{fill:#2c1d12;stroke:#7f4721}.pillE{fill:#161f3a;stroke:#3751aa}.pillTextA{fill:#7bb1ef}.pillTextB{fill:#b6a3ff}.pillTextC{fill:#7fd0b8}.pillTextD{fill:#ffb37a}.pillTextE{fill:#9fb1ff}.accent{fill:url(#accent)}.outline{stroke:#2a323d}.surface{fill:#111821;stroke:#25303b}
+    </style>
+  </defs>
+
+  <rect class="bg" width="960" height="260" rx="24"/>
+  <rect x="26" y="22" width="908" height="216" rx="20" class="card"/>
+  <rect x="40" y="38" width="8" height="184" rx="4" class="accent"/>
+
+  <text x="66" y="58" class="muted" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="800" letter-spacing="2.4">FEATURED PROJECT</text>
+  <text x="66" y="96" class="text" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="30" font-weight="800">klartext-tools.com</text>
+  <text x="66" y="124" class="sub" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="500">A privacy-friendly collection of free online tools that run directly in the browser.</text>
+  <text x="66" y="150" class="sub" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="500">Built for utility, speed, and zero-friction use.</text>
+
+  <g>
+    <rect x="66" y="174" width="92" height="28" rx="14" class="pillA"/>
+    <text x="112" y="192" text-anchor="middle" class="pillTextA" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">11ty / SSG</text>
+    <rect x="166" y="174" width="102" height="28" rx="14" class="pillB"/>
+    <text x="217" y="192" text-anchor="middle" class="pillTextB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Vanilla JS</text>
+    <rect x="276" y="174" width="96" height="28" rx="14" class="pillC"/>
+    <text x="324" y="192" text-anchor="middle" class="pillTextC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">EN / DE</text>
+    <rect x="380" y="174" width="108" height="28" rx="14" class="pillD"/>
+    <text x="434" y="192" text-anchor="middle" class="pillTextD" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Browser-first</text>
+  </g>
+
+  <g>
+    <rect x="544" y="50" width="344" height="156" rx="16" class="surface"/>
+    <text x="568" y="80" class="muted" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="11" font-weight="800" letter-spacing="1.8">CATEGORIES</text>
+
+    <rect x="568" y="96" width="108" height="30" rx="15" class="pillA"/>
+    <text x="622" y="115" text-anchor="middle" class="pillTextA" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Developer</text>
+
+    <rect x="686" y="96" width="88" height="30" rx="15" class="pillB"/>
+    <text x="730" y="115" text-anchor="middle" class="pillTextB" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Gaming</text>
+
+    <rect x="784" y="96" width="80" height="30" rx="15" class="pillC"/>
+    <text x="824" y="115" text-anchor="middle" class="pillTextC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Math</text>
+
+    <rect x="568" y="138" width="94" height="30" rx="15" class="pillD"/>
+    <text x="615" y="157" text-anchor="middle" class="pillTextD" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Finance</text>
+
+    <rect x="672" y="138" width="74" height="30" rx="15" class="pillE"/>
+    <text x="709" y="157" text-anchor="middle" class="pillTextE" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Web</text>
+
+    <rect x="756" y="138" width="74" height="30" rx="15" class="pillC"/>
+    <text x="793" y="157" text-anchor="middle" class="pillTextC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">More</text>
+
+    <path d="M568 185H864" class="outline" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="568" y="202" class="sub" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">Fast static architecture · No accounts · No paywalls</text>
+  </g>
+</svg>

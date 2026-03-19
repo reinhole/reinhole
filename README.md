@@ -21,7 +21,10 @@ Baden-Württemberg, Germany
 
 <br>
 
-<img src="assets/hero-banner-improved.svg" alt="Ole Reinhold hero banner">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-banner-dark.svg">
+  <img src="assets/hero-banner-improved.svg" alt="Ole Reinhold hero banner">
+</picture>
 
 </div>
 
@@ -45,7 +48,10 @@ I am always learning, always building, and open to connecting with people workin
 ## Featured Project
 
 <div align="center">
-  <img src="assets/project-card-improved.svg" alt="Featured project card for Klartext Tools">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/project-card-dark.svg">
+    <img src="assets/project-card-improved.svg" alt="Featured project card for Klartext Tools">
+  </picture>
 </div>
 
 ### Klartext Tools
@@ -126,7 +132,10 @@ It currently includes tools across areas such as:
 ## Current Focus
 
 <div align="center">
-  <img src="assets/focus-bar-improved.svg" alt="Current focus banner">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/focus-bar-dark.svg">
+    <img src="assets/focus-bar-improved.svg" alt="Current focus banner">
+  </picture>
 </div>
 
 ---
