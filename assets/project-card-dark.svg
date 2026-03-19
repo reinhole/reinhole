@@ -17,8 +17,8 @@
 
   <text x="66" y="58" class="muted" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="800" letter-spacing="2.4">FEATURED PROJECT</text>
   <text x="66" y="96" class="text" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="30" font-weight="800">klartext-tools.com</text>
-  <text x="66" y="124" class="sub" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="17" font-weight="500">A privacy-friendly collection of free online tools that run directly in the browser.</text>
-  <text x="66" y="150" class="sub" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="500">Built for utility, speed, and zero-friction use.</text>
+  <text x="66" y="124" class="sub" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="500">Free, privacy-friendly tools that run directly in the browser.</text>
+  <text x="66" y="150" class="sub" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16" font-weight="500">No accounts · No paywalls · Zero friction.</text>
 
   <g>
     <rect x="66" y="174" width="92" height="28" rx="14" class="pillA"/>
@@ -44,14 +44,14 @@
     <rect x="784" y="96" width="80" height="30" rx="15" class="pillC"/>
     <text x="824" y="115" text-anchor="middle" class="pillTextC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Math</text>
 
-    <rect x="568" y="138" width="94" height="30" rx="15" class="pillD"/>
-    <text x="615" y="157" text-anchor="middle" class="pillTextD" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Finance</text>
+    <rect x="568" y="138" width="86" height="30" rx="15" class="pillD"/>
+    <text x="611" y="157" text-anchor="middle" class="pillTextD" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Finance</text>
 
-    <rect x="672" y="138" width="74" height="30" rx="15" class="pillE"/>
-    <text x="709" y="157" text-anchor="middle" class="pillTextE" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Web</text>
+    <rect x="664" y="138" width="74" height="30" rx="15" class="pillE"/>
+    <text x="701" y="157" text-anchor="middle" class="pillTextE" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Web</text>
 
-    <rect x="756" y="138" width="74" height="30" rx="15" class="pillC"/>
-    <text x="793" y="157" text-anchor="middle" class="pillTextC" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">More</text>
+    <rect x="748" y="138" width="108" height="30" rx="15" class="pillA"/>
+    <text x="802" y="157" text-anchor="middle" class="pillTextA" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="12" font-weight="700">Productivity</text>
 
     <path d="M568 185H864" class="outline" stroke-width="1.5" stroke-linecap="round"/>
     <text x="568" y="202" class="sub" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="13" font-weight="600">Fast static architecture · No accounts · No paywalls</text>
