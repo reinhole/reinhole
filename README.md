@@ -56,27 +56,37 @@ I like projects that combine clear thinking, strong implementation, and real-wor
 
 ### Klartext Tools
 
-Klartext Tools is a browser-based utility platform I am building to create fast, privacy-friendly tools that solve real problems with minimal friction.
+Klartext Tools is a solo-built platform of free browser tools, calculators, and practical guides designed to be fast, clear, and genuinely useful.
 
-The focus is on tools that are:
+The project is built around a simple promise:
 
-- fast to open
-- easy to understand
-- useful immediately
-- accessible without an account
+- no installs
+- no sign-ups
+- no unnecessary friction
+- direct answers in the browser
 
-Current areas include:
+Instead of trying to feel like a heavy SaaS product, Klartext Tools focuses on opening quickly, solving one concrete problem well, and helping people move on.
 
-| Category | Examples |
+The platform currently spans areas such as:
+
+| Area | Examples |
 |---|---|
-| Developer Tools | JSON formatter, Regex tools, JWT decoder, Cron builder, Base64 and hashing tools |
-| Gaming Tools | FPS calculator, sensitivity converters, aim visualizer |
-| Math and Science | Function plotter, statistics calculator, unit converter, equation solver |
-| Web Utilities | SEO meta tag generator, sitemap validator, Open Graph preview, UTM builder |
-| Home and DIY | Paint, tile, flooring, and concrete calculators |
-| Diagnostics | Keyboard tester, typing speed test, reaction time test |
+| Roblox Tools | DevEx calculators, tax calculators, payout split tools, Luau and Color3 helpers |
+| Discord Tools | Timestamp generator, webhook embed builder, permission calculator, markdown helpers |
+| Developer Tools | Code snippet formatter, regex tester, JSON tools, JWT decoder, Cron builder |
+| Gaming Tools | FPS estimator, sensitivity tools, polling rate checker, input lag and frametime tools |
+| Productivity | Focus timers, planners, counters, date calculators, password and text utilities |
+| Finance | Compound interest, drawdown, inflation, FIRE, loan, tax, and return calculators |
+| Web Utilities | Sitemap validator, robots.txt tools, hreflang checker, performance simulator |
+| SEO & Marketing | Meta tag generator, SERP preview, Open Graph preview, UTM builders |
+| Tests & Diagnostics | Keyboard tester, typing speed test, reaction time test, screen resolution check |
+| Math & Science | Equation solvers, statistics tools, function plotter, scientific calculator |
+| Construction Tools | Tile, flooring, drywall, concrete, wallpaper, and paint calculators |
+| Lifestyle & Health | BMI, TDEE, heart rate, calorie burn, sleep cycle, and body fat tools |
 
-**Tech:** Eleventy (11ty), Nunjucks, Vanilla JavaScript, multilingual architecture, static deployment
+The site also combines tools with curated learn content, including guides, comparisons, explainers, and best-tool pages, so the experience is not just about calculating something, but also understanding what to do next.
+
+**Tech:** static architecture, multilingual site structure, browser-first utilities, lightweight front-end delivery
 
 [Visit Klartext Tools](https://klartext-tools.com/en/)
 
