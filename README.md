@@ -7,17 +7,17 @@
 
 <sup><b>AI & DATA SCIENCE · STUDENT · DEVELOPER</b></sup>
 
-**Building practical tools, data-driven projects, and experiments at the intersection of code, AI, and curiosity.**
+**Building practical software, data-driven projects, and useful digital tools.**
 
 B.Sc. Artificial Intelligence & Data Science  
 Baden-Württemberg, Germany
 
 <br>
 
-[![Website](https://img.shields.io/badge/klartext--tools.com-185FA5?style=flat-square&logo=googlechrome&logoColor=white)](https://klartext-tools.com/en/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-185FA5?style=flat-square&logo=googlechrome&logoColor=white)](https://klartext-tools.com/en/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/olereinhold)
 [![GitHub](https://img.shields.io/badge/GitHub-reinhole-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/reinhole)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sangria82artsier@icloud.com)
+[![Email](https://img.shields.io/badge/Email-Contact-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sangria82artsier@icloud.com)
 
 <br>
 
@@ -32,33 +32,40 @@ Baden-Württemberg, Germany
 
 ## About
 
-I enjoy building things that are useful, interesting, or technically challenging — from scraping pipelines and automation tools to simulations, games, and web applications.
+I enjoy building things that are useful, technically interesting, or challenging to implement — from scraping pipelines and automation systems to AI experiments, simulations, and web applications.
 
 My current interests include:
 
 - web scraping and data collection systems
 - practical AI and machine learning
-- developer-focused and utility-driven web products
+- utility-driven software and web products
 - experimentation across software, data, and interactive systems
 
-I am always learning, always building, and open to connecting with people working on similar problems.
+I like projects that combine clear thinking, strong implementation, and real-world usefulness.
 
 ---
 
-## Featured Project
+## Selected Project
 
 <div align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/project-card-dark.svg">
-    <img src="assets/project-card-improved.svg" alt="Featured project card for Klartext Tools">
+    <img src="assets/project-card-improved.svg" alt="Featured project card">
   </picture>
 </div>
 
 ### Klartext Tools
 
-Klartext Tools is a growing collection of free, privacy-friendly browser tools built to be genuinely useful. The project focuses on fast, accessible, no-account tools that solve real problems without unnecessary friction.
+Klartext Tools is a browser-based utility platform I am building to create fast, privacy-friendly tools that solve real problems with minimal friction.
 
-It currently includes tools across areas such as:
+The focus is on tools that are:
+
+- fast to open
+- easy to understand
+- useful immediately
+- accessible without an account
+
+Current areas include:
 
 | Category | Examples |
 |---|---|
@@ -71,7 +78,7 @@ It currently includes tools across areas such as:
 
 **Tech:** Eleventy (11ty), Nunjucks, Vanilla JavaScript, multilingual architecture, static deployment
 
-[Visit klartext-tools.com](https://klartext-tools.com/en/)
+[Visit Klartext Tools](https://klartext-tools.com/en/)
 
 ---
 
@@ -144,7 +151,7 @@ It currently includes tools across areas such as:
 
 <div align="center">
 
-[![Website](https://img.shields.io/badge/Website-klartext--tools.com-185FA5?style=flat-square&logo=googlechrome&logoColor=white)](https://klartext-tools.com/en/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-klartext--tools.com-185FA5?style=flat-square&logo=googlechrome&logoColor=white)](https://klartext-tools.com/en/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ole%20Reinhold-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/olereinhold)
 [![GitHub](https://img.shields.io/badge/GitHub-reinhole-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/reinhole)
 [![Email](https://img.shields.io/badge/Email-Contact-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:sangria82artsier@icloud.com)
