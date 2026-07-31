@@ -22,11 +22,14 @@ LABEL_SIZE = 13
 NUM_SIZE = 11
 BASE = 22  # baseline
 
+# Work first. A visitor to a GitHub profile is asking "what has this person
+# built", not "who are they" -- the biography reads better once the projects
+# have given it something to attach to.
 SECTIONS = [
-    ("01", "about", "hd-about.svg"),
-    ("02", "selected work", "hd-work.svg"),
-    ("03", "stack", "hd-stack.svg"),
-    ("04", "activity", "hd-activity.svg"),
+    ("01", "selected work", "hd-work.svg"),
+    ("02", "stack", "hd-stack.svg"),
+    ("03", "activity", "hd-activity.svg"),
+    ("04", "about", "hd-about.svg"),
     ("05", "elsewhere", "hd-elsewhere.svg"),
 ]
 

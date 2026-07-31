@@ -1,29 +1,25 @@
 #!/usr/bin/env python3
-"""Render the portfolio site's ASCII portrait as a self-typing SVG.
+"""The ASCII portrait: character grid, and the self-typing SVG fragment.
+
+This is a module, not a standalone graphic. The portrait is composed into
+`hero.svg` beside the wordmark rather than stacked above it -- as its own
+full-width block it cost 471px of scroll before the page said anything.
 
 The source of truth is the same file the website prints in its hero,
-`portfolio-site/assets/portrait_ascii.txt`, so the two pages cannot drift into
-showing different portraits.
-
-Run locally, once, and commit ascii.svg. This deliberately does NOT run in CI:
-generating the same file in two places guarantees merge conflicts, and the
-portrait has no reason to change nightly.
-
-    .venv/bin/python scripts/make_portrait.py
+`portfolio-site/assets/portrait_ascii.txt`, so the two cannot drift into
+showing different portraits. Run `make_hero.py` to regenerate.
 
 Why the grid is resampled rather than copied
 --------------------------------------------
 The site's grid is 250 columns. It can afford that because it sets the portrait
-in `cqw` units against a full-viewport hero. A README column is ~880px at its
-widest and GitHub scales images down from there, so 250 columns lands near 2px
-per character and the whole thing collapses into grey noise. Legibility needs
-roughly 5px per character, which caps a 460px-wide block at ~90 columns.
+in `cqw` units against a full-viewport hero. In the hero composition the
+portrait is ~300px wide, where 250 columns land near 1px per character and
+collapse into grey noise. Legibility needs roughly 5px per character.
 
 So the characters are read back as ink densities, resampled as an image, and
 re-mapped onto the site's own six-level ramp. The artwork survives; only the
 resolution changes.
 """
-import base64
 import pathlib
 
 import cv2
@@ -33,30 +29,21 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE_ASCII = (
     ROOT.parent / "Personal_Website" / "portfolio-site" / "assets" / "portrait_ascii.txt"
 )
-OUT = ROOT / "ascii.svg"
-RAMP_FONT = ROOT / "scripts" / "fonts" / "firacode-ramp.woff2"
 
 # The site's ramp, blank -> solid. Kept exactly: it is part of the artwork.
 RAMP = " ·-+#@"
 # Approximate ink coverage per glyph, used to read the source back as an image.
 INK = {" ": 0.0, "·": 0.10, "-": 0.20, "+": 0.34, "#": 0.70, "@": 0.92}
 
-COLS = 90
 # Crop the source grid to head-and-shoulders. Below this the photo is flat torso
 # that resamples to an even field of '·' -- 30% more height carrying no subject.
 CROP_ROWS = 152
 
-# Cell geometry, matched to how the site sets the same text:
-#   font-family Fira Code  -> advance 1200/1950 upm = 0.61538 em
-#   letter-spacing -0.02em -> 0.59538 em effective
-#   line-height 1.0        -> 1.0 em
-# Fira Code is NOT 0.600 like JetBrains Mono; every constant derived from 0.600
-# is wrong here. Measure the font, never inherit the number.
-FONT_SIZE = 8.6
+# Fira Code advances 1200/1950 upm = 0.61538 em, NOT the 0.600 that JetBrains
+# Mono uses. The site tracks it -0.02em at line-height 1.
 ADVANCE = 0.61538
 TRACKING = -0.02
-CHAR_W = FONT_SIZE * (ADVANCE + TRACKING)
-CHAR_H = FONT_SIZE * 1.0
+CELL = ADVANCE + TRACKING  # 0.59538 em per column, 1 em per row
 
 STAGGER = 0.075  # seconds between row starts, top to bottom
 CPS = 190.0      # characters per second -- a constant *speed*, not a constant
@@ -78,12 +65,11 @@ def load_density() -> np.ndarray:
     return grid[r0 : r1 + 1, c0 : c1 + 1]
 
 
-def to_rows(density: np.ndarray) -> list[str]:
-    d = density[:CROP_ROWS]
+def to_rows(cols: int) -> list[str]:
+    d = load_density()[:CROP_ROWS]
     h, w = d.shape
     # Source and output share a cell aspect, so the resample is proportional.
-    rows = round(h * COLS / w)
-    small = cv2.resize(d, (COLS, rows), interpolation=cv2.INTER_AREA)
+    small = cv2.resize(d, (cols, round(h * cols / w)), interpolation=cv2.INTER_AREA)
     idx = np.clip(
         (small / max(INK.values()) * (len(RAMP) - 1)).round().astype(int),
         0,
@@ -92,78 +78,49 @@ def to_rows(density: np.ndarray) -> list[str]:
     return ["".join(RAMP[i] for i in row) for row in idx]
 
 
-def font_face() -> str:
-    if not RAMP_FONT.exists():
-        raise SystemExit(f"missing {RAMP_FONT} -- run scripts/subset_fonts.py first")
-    b64 = base64.b64encode(RAMP_FONT.read_bytes()).decode()
-    # An external font URL cannot work: this SVG loads through an <img>, and
-    # browsers refuse subresource fetches for image documents. Base64 does.
-    return (
-        "@font-face{font-family:'FiraRamp';font-style:normal;font-weight:400;"
-        f"src:url(data:font/woff2;base64,{b64}) format('woff2');}}"
-    )
-
-
 def esc(s: str) -> str:
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
-def build(rows: list[str]) -> str:
-    pad = 14.0
-    row_w = COLS * CHAR_W
-    w = row_w + pad * 2
-    h = len(rows) * CHAR_H + pad * 2
-
-    out = [
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w:.1f}" height="{h:.1f}" '
-        f'viewBox="0 0 {w:.1f} {h:.1f}" role="img" '
-        f'aria-label="ASCII portrait of Ole Reinhold, typing itself line by line">',
-        "<style>"
-        + font_face()
-        + ".r{font-family:'FiraRamp',ui-monospace,monospace;"
-        f"font-size:{FONT_SIZE}px;letter-spacing:{TRACKING * FONT_SIZE:.3f}px;"
-        "fill:#f0f0f0;white-space:pre}"
-        "</style>",
-        f'<rect width="{w:.1f}" height="{h:.1f}" fill="#0a0a0a"/>',
-    ]
+def typing_fragment(
+    rows: list[str], ox: float, oy: float, font_size: float, ink: str
+) -> tuple[list[str], float, float]:
+    """SVG for the portrait typing itself. Returns (parts, width, height)."""
+    cw = font_size * CELL
+    ch = font_size
+    parts: list[str] = []
 
     for i, row in enumerate(rows):
-        # Type only the row's own content span. Animating the full 90 columns
-        # sends the cursor marching through the blank margin long after the
-        # last character landed, so the cursors detach from the text and read
-        # as loose specks drifting across the panel.
+        # Type only the row's own content span. Animating the full width sends
+        # the cursor marching through the blank margin long after the last
+        # character landed, so cursors detach and read as drifting specks.
         stripped = row.rstrip()
         if not stripped:
-            continue  # a blank row has nothing to type and needs no cursor
+            continue
         c0 = len(row) - len(row.lstrip())
         c1 = len(stripped)
-        span = (c1 - c0) * CHAR_W
-        x0 = pad + c0 * CHAR_W
-
-        # Baseline sits near the bottom of the cell; 0.78em is the visual centre
-        # for Fira Code at line-height 1.
-        y = pad + i * CHAR_H + CHAR_H * 0.78
-        clip_y = pad + i * CHAR_H
+        span = (c1 - c0) * cw
+        x0 = ox + c0 * cw
+        top = oy + i * ch
         start = i * STAGGER
         dur = max(MIN_DUR, (c1 - c0) / CPS)
         begin = f"{start:.3f}s"
 
-        # Each row is revealed by a clip rect widening from zero, with a block
-        # riding the wipe edge as a cursor. fill="freeze" so the portrait types
-        # once and stops -- no looping.
-        out.append(
-            f'<clipPath id="w{i}"><rect x="{x0:.2f}" y="{clip_y:.2f}" '
-            f'height="{CHAR_H:.2f}" width="0">'
+        # A clip rect widening from zero, with a block riding the wipe edge as
+        # a cursor. fill="freeze" so the portrait types once and stops.
+        parts.append(
+            f'<clipPath id="w{i}"><rect x="{x0:.2f}" y="{top:.2f}" '
+            f'height="{ch:.2f}" width="0">'
             f'<animate attributeName="width" values="0;{span:.2f}" '
             f'begin="{begin}" dur="{dur:.3f}s" fill="freeze"/></rect></clipPath>'
         )
-        out.append(
-            f'<text class="r" x="{pad:.1f}" y="{y:.2f}" clip-path="url(#w{i})">'
-            f"{esc(row)}</text>"
+        parts.append(
+            f'<text class="px" x="{ox:.2f}" y="{top + ch * 0.78:.2f}" '
+            f'clip-path="url(#w{i})">{esc(row)}</text>'
         )
-        out.append(
-            f'<rect fill="#f0f0f0" y="{clip_y + CHAR_H * 0.15:.2f}" '
-            f'width="{CHAR_W:.2f}" height="{CHAR_H * 0.7:.2f}" x="{x0:.2f}" opacity="0">'
+        parts.append(
+            f'<rect fill="{ink}" y="{top + ch * 0.15:.2f}" width="{cw:.2f}" '
+            f'height="{ch * 0.7:.2f}" x="{x0:.2f}" opacity="0">'
             f'<animate attributeName="x" values="{x0:.2f};{x0 + span:.2f}" '
             f'begin="{begin}" dur="{dur:.3f}s" fill="freeze"/>'
             f'<set attributeName="opacity" to="1" begin="{begin}"/>'
@@ -171,25 +128,10 @@ def build(rows: list[str]) -> str:
             "</rect>"
         )
 
-    out.append("</svg>")
-    return "".join(out)
-
-
-def main() -> None:
-    rows = to_rows(load_density())
-    OUT.write_text(build(rows))
-    kb = OUT.stat().st_size / 1024
-    drawn = [r for r in rows if r.strip()]
-    last = max(
-        i * STAGGER + max(MIN_DUR, len(r.strip()) / CPS)
-        for i, r in enumerate(rows)
-        if r.strip()
-    )
-    print(
-        f"{OUT.name}: {COLS}x{len(rows)} chars ({len(drawn)} rows drawn), "
-        f"{kb:.0f} KB, settles at {last:.1f}s"
-    )
+    return parts, len(rows[0]) * cw, len(rows) * ch
 
 
 if __name__ == "__main__":
-    main()
+    r = to_rows(58)
+    print(f"{len(r[0])} cols x {len(r)} rows")
+    print("\n".join(r))
