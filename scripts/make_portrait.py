@@ -58,8 +58,10 @@ TRACKING = -0.02
 CHAR_W = FONT_SIZE * (ADVANCE + TRACKING)
 CHAR_H = FONT_SIZE * 1.0
 
-STAGGER = 0.09  # seconds between row starts, top to bottom
-WIPE = 0.55     # seconds for one row to type
+STAGGER = 0.075  # seconds between row starts, top to bottom
+CPS = 190.0      # characters per second -- a constant *speed*, not a constant
+                 # duration, so every row types at the same rate
+MIN_DUR = 0.12   # floor, so a two-character row still reads as a keystroke
 
 
 def load_density() -> np.ndarray:
@@ -126,19 +128,34 @@ def build(rows: list[str]) -> str:
     ]
 
     for i, row in enumerate(rows):
+        # Type only the row's own content span. Animating the full 90 columns
+        # sends the cursor marching through the blank margin long after the
+        # last character landed, so the cursors detach from the text and read
+        # as loose specks drifting across the panel.
+        stripped = row.rstrip()
+        if not stripped:
+            continue  # a blank row has nothing to type and needs no cursor
+        c0 = len(row) - len(row.lstrip())
+        c1 = len(stripped)
+        span = (c1 - c0) * CHAR_W
+        x0 = pad + c0 * CHAR_W
+
         # Baseline sits near the bottom of the cell; 0.78em is the visual centre
         # for Fira Code at line-height 1.
         y = pad + i * CHAR_H + CHAR_H * 0.78
-        begin = f"{i * STAGGER:.2f}s"
         clip_y = pad + i * CHAR_H
+        start = i * STAGGER
+        dur = max(MIN_DUR, (c1 - c0) / CPS)
+        begin = f"{start:.3f}s"
+
         # Each row is revealed by a clip rect widening from zero, with a block
         # riding the wipe edge as a cursor. fill="freeze" so the portrait types
         # once and stops -- no looping.
         out.append(
-            f'<clipPath id="w{i}"><rect x="{pad:.1f}" y="{clip_y:.2f}" '
+            f'<clipPath id="w{i}"><rect x="{x0:.2f}" y="{clip_y:.2f}" '
             f'height="{CHAR_H:.2f}" width="0">'
-            f'<animate attributeName="width" values="0;{row_w:.1f}" '
-            f'begin="{begin}" dur="{WIPE}s" fill="freeze"/></rect></clipPath>'
+            f'<animate attributeName="width" values="0;{span:.2f}" '
+            f'begin="{begin}" dur="{dur:.3f}s" fill="freeze"/></rect></clipPath>'
         )
         out.append(
             f'<text class="r" x="{pad:.1f}" y="{y:.2f}" clip-path="url(#w{i})">'
@@ -146,11 +163,11 @@ def build(rows: list[str]) -> str:
         )
         out.append(
             f'<rect fill="#f0f0f0" y="{clip_y + CHAR_H * 0.15:.2f}" '
-            f'width="{CHAR_W:.2f}" height="{CHAR_H * 0.7:.2f}" x="{pad:.1f}" opacity="0">'
-            f'<animate attributeName="x" values="{pad:.1f};{pad + row_w:.1f}" '
-            f'begin="{begin}" dur="{WIPE}s" fill="freeze"/>'
+            f'width="{CHAR_W:.2f}" height="{CHAR_H * 0.7:.2f}" x="{x0:.2f}" opacity="0">'
+            f'<animate attributeName="x" values="{x0:.2f};{x0 + span:.2f}" '
+            f'begin="{begin}" dur="{dur:.3f}s" fill="freeze"/>'
             f'<set attributeName="opacity" to="1" begin="{begin}"/>'
-            f'<set attributeName="opacity" to="0" begin="{i * STAGGER + WIPE:.2f}s"/>'
+            f'<set attributeName="opacity" to="0" begin="{start + dur:.3f}s"/>'
             "</rect>"
         )
 
@@ -162,9 +179,15 @@ def main() -> None:
     rows = to_rows(load_density())
     OUT.write_text(build(rows))
     kb = OUT.stat().st_size / 1024
+    drawn = [r for r in rows if r.strip()]
+    last = max(
+        i * STAGGER + max(MIN_DUR, len(r.strip()) / CPS)
+        for i, r in enumerate(rows)
+        if r.strip()
+    )
     print(
-        f"{OUT.name}: {COLS}x{len(rows)} chars, {kb:.0f} KB, "
-        f"types in {len(rows) * STAGGER + WIPE:.1f}s"
+        f"{OUT.name}: {COLS}x{len(rows)} chars ({len(drawn)} rows drawn), "
+        f"{kb:.0f} KB, settles at {last:.1f}s"
     )
 
 
