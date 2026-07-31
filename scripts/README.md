@@ -32,6 +32,14 @@ Then fetch the upstream font release — see `fonts/README.md`.
 .venv/bin/python scripts/make_stack.py       # stack.svg
 ```
 
+`make_portrait.py` reads the portfolio site's `assets/portrait_ascii.txt`
+across a directory boundary — it expects `Personal_Website/portfolio-site/` as
+a **sibling of this repo**, i.e. the `~/Developer/Personal/` layout. A clone of
+this repo on its own will fail with `missing …/portrait_ascii.txt`, which is
+intended: the site is the single source of truth for the portrait, and
+vendoring a copy here would let the two drift apart. Check the site out beside
+this repo, or skip the step — `ascii.svg` is committed.
+
 `preview_portrait.py` rasterises the portrait at its true 460px README width.
 Use it rather than reading the grid in a terminal — the terminal's cell aspect
 and font are not the ones that ship.
