@@ -44,38 +44,7 @@ Three days, five people, one Godot project — and the discovery that in a jam, 
 would describe two of them rather than the work. The stack above is drawn from
 what the projects actually ship instead.</sub>
 
-<img src="hd-about.svg" width="880" alt="04 — about">
-
-> I build systems where code meets messy reality: trading workflows with<br>
-> human approval gates, student tools that replace scattered portals, web<br>
-> utilities that earn traffic, and a flapping-wing robot that started as a<br>
-> research pitch.
-
-The thread through most of my software is narrower than it looks: take<br>
-information that is technically public but badly organised, and make it<br>
-legible. It began as a scraper for German judicial and insolvency auctions,<br>
-written for a course, and grew from there. That is also why markets interest<br>
-me — start-ups, investing and M&A are where data analysis stops being an<br>
-exercise and starts changing a decision, and where being wrong is expensive<br>
-enough to keep you honest.
-
-The other constant is the pull between hardware and software: writing the<br>
-code, then printing the part it has to run on. Away from the keyboard, alto<br>
-saxophone in the orchestra of the Musikverein Kuppingen since 2015, twelve<br>
-years with the DLRG as a lifeguard and group leader, and these days the<br>
-Fresher's Weekend for incoming computer science students in Stuttgart.
-
-<samp><b>Risk before autonomy.</b> In synapse, models can narrate or veto trades,<br>
-but they cannot increase risk or execute on their own.<br>
-<br>
-<b>Software for real friction.</b> UniVerse exists because student life is split<br>
-across too many portals, calendars, menus, and grade systems.<br>
-<br>
-<b>Curiosity leaves artifacts.</b> CAD iterations, scraped datasets, saxophone<br>
-practice, rescue training, and small tools all belong to the same habit:<br>
-build, test, refine.</samp>
-
-<img src="hd-elsewhere.svg" width="880" alt="05 — elsewhere">
+<img src="hd-elsewhere.svg" width="880" alt="04 — elsewhere">
 
 <samp><a href="https://olereinhold.com">olereinhold.com →</a> · portfolio, project write-ups, CV<br>
 <a href="https://linkedin.com/in/olereinhold">linkedin.com/in/olereinhold →</a><br>

@@ -29,8 +29,7 @@ SECTIONS = [
     ("01", "selected work", "hd-work.svg"),
     ("02", "stack", "hd-stack.svg"),
     ("03", "activity", "hd-activity.svg"),
-    ("04", "about", "hd-about.svg"),
-    ("05", "elsewhere", "hd-elsewhere.svg"),
+    ("04", "elsewhere", "hd-elsewhere.svg"),
 ]
 
 STYLES = (
